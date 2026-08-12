@@ -1,19 +1,13 @@
-import { Routes } from '@angular/router';
 import { Component } from '@angular/core';
-import { LoginComponent } from './login/login';
-import { MipaginaComponent } from './pages/primera-pagina';
+import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [LoginComponent],
+  imports: [RouterOutlet],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
 export class App {
   title = 'VetConnect';
 }
-export const routes: Routes = [
-  { path: 'login', component: LoginComponent },
-  { path: 'mipagina', component: MipaginaComponent }
-];
